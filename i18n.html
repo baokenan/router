@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>   
+
+<script>
+    var str = 'bianlifeng';
+    var strLen = str.length - 1;
+    var strArr = [];
+    for (var i = 1; i < strLen ;i++) {
+        var a1 = str.slice(0,i);
+        var b1 = str.slice(-1);
+        var c1 = str.slice(0,1);
+        var d1 = str.slice(-i);
+        var bbb = strLen - i;
+        var aaa = a1 + bbb + b1;
+        var ccc = c1 + bbb + d1;
+        
+        if (i != 1) {
+            strArr.push(aaa,ccc);
+        } else {
+            strArr.push(aaa)
+        }
+    }
+    strArr.push(str);
+    console.log(strArr)
+</script>
+</body>
+</html>
